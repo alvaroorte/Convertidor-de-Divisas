@@ -103,7 +103,7 @@ const ConvertidorDivisas = () => {
               </Select>
         </FormControl>
       </div>
-      <h3>Resultado: {calcularConversion()} Pesos {monedaDestino}</h3>
+      <h3>Resultado: {calcularConversion()} Pesos {monedaDestino} </h3>
     </div>
   );
 };
