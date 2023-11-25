@@ -7,8 +7,8 @@ import TextField from '@mui/material/TextField';
   
 const ConvertidorDivisas = () => {
   const [monto, setMonto] = useState(1);
-  const [monedaOrigen, setMonedaOrigen] = useState('Dolar');
-  const [monedaDestino, setMonedaDestino] = useState('Argentino');
+  const [monedaOrigen, setMonedaOrigen] = useState('Dolares');
+  const [monedaDestino, setMonedaDestino] = useState('Argentinos');
 
 
   const handleChangeMontoOrigen = (event) => {
@@ -20,17 +20,17 @@ const ConvertidorDivisas = () => {
 
   // En este ejemplo, asumimos tasas de cambio fijas.
   const tasasDeCambio = {
-    Dolar: 1,
-    Argentino: 355.86,
-    Boliviano: 6.89, 
-    Chileno: 868.02, 
-    Venezolano: 35.42,  
-    Colombiano: 4054.43,  
-    Mexicano: 17.12,  
-    Uruguayo: 38.96,  
-    Brasileno: 4.90, 
-    Ecuatoriano: 25000, 
-    Peru: 3.73, 
+    Dolares: 1,
+    Argentinos: 355.86,
+    Bolivianos: 6.89, 
+    Chilenos: 868.02, 
+    Venezolanos: 35.42,  
+    Colombianos: 4054.43,  
+    Mexicanos: 17.12,  
+    Uruguayos: 38.96,  
+    Brasilenos: 4.90, 
+    Ecuatorianos: 25000, 
+    Peruanos: 3.73, 
   };
 
   const calcularConversion = () => {
@@ -63,17 +63,17 @@ const ConvertidorDivisas = () => {
           label="Monto Origen"
           onChange={handleChangeMontoOrigen}
         >
-          <MenuItem value={"Dolar"}>Dolar</MenuItem>
-          <MenuItem value={"Argentino"}>Peso Argentino</MenuItem>
-          <MenuItem value={"Boliviano"}>Boliviano</MenuItem>
-          <MenuItem value={"Chileno"}>Peso Chileno</MenuItem>
-          <MenuItem value={"Venezolano"}>Peso Venezolano</MenuItem>
-          <MenuItem value={"Colombiano"}>Peso Colombiano</MenuItem>
-          <MenuItem value={"Mexicano"}>Peso Mexicano</MenuItem>
-          <MenuItem value={"Brasileno"}>Real Brasileño</MenuItem>
-          <MenuItem value={"Uruguayo"}>Peso Uruguayo</MenuItem>
-          <MenuItem value={"Ecuatoriano"}>Peso Ecuatoriano</MenuItem>
-          <MenuItem value={"Peru"}>Peso Peruano</MenuItem>
+          <MenuItem value={"Dolares"}>Dolar</MenuItem>
+          <MenuItem value={"Argentinos"}>Peso Argentino</MenuItem>
+          <MenuItem value={"Bolivianos"}>Boliviano</MenuItem>
+          <MenuItem value={"Chilenos"}>Peso Chileno</MenuItem>
+          <MenuItem value={"Venezolanos"}>Peso Venezolano</MenuItem>
+          <MenuItem value={"Colombianos"}>Peso Colombiano</MenuItem>
+          <MenuItem value={"Mexicanos"}>Peso Mexicano</MenuItem>
+          <MenuItem value={"Brasilenos"}>Real Brasileño</MenuItem>
+          <MenuItem value={"Uruguayos"}>Peso Uruguayo</MenuItem>
+          <MenuItem value={"Ecuatorianos"}>Peso Ecuatoriano</MenuItem>
+          <MenuItem value={"Peruanos"}>Peso Peruano</MenuItem>
         </Select>
         </FormControl>
       
@@ -89,17 +89,17 @@ const ConvertidorDivisas = () => {
                 label="Monto de Destino"
                 onChange={handleChangeMontoDestiono}
               >
-                <MenuItem value={"Dolar"}>Dolar</MenuItem>
-                <MenuItem value={"Argentino"}>Peso Argentino</MenuItem>
-                <MenuItem value={"Boliviano"}>Boliviano</MenuItem>
-                <MenuItem value={"Chileno"}>Peso Chileno</MenuItem>
-                <MenuItem value={"Venezolano"}>Peso Venezolano</MenuItem>
-                <MenuItem value={"Colombiano"}>Peso Colombiano</MenuItem>
-                <MenuItem value={"Mexicano"}>Peso Mexicano</MenuItem>
-                <MenuItem value={"Brasileno"}>Real Brasileño</MenuItem>
-                <MenuItem value={"Uruguayo"}>Peso Uruguayo</MenuItem>
-                <MenuItem value={"Ecuatoriano"}>Peso Ecuatoriano</MenuItem>
-                <MenuItem value={"Peru"}>Peso Peruano</MenuItem>
+                <MenuItem value={"Dolares"}>Dolar</MenuItem>
+                <MenuItem value={"Argentinos"}>Peso Argentino</MenuItem>
+                <MenuItem value={"Bolivianos"}>Boliviano</MenuItem>
+                <MenuItem value={"Chilenos"}>Peso Chileno</MenuItem>
+                <MenuItem value={"Venezolanos"}>Peso Venezolano</MenuItem>
+                <MenuItem value={"Colombianos"}>Peso Colombiano</MenuItem>
+                <MenuItem value={"Mexicanos"}>Peso Mexicano</MenuItem>
+                <MenuItem value={"Brasilenos"}>Real Brasileño</MenuItem>
+                <MenuItem value={"Uruguayos"}>Peso Uruguayo</MenuItem>
+                <MenuItem value={"Ecuatorianos"}>Peso Ecuatoriano</MenuItem>
+                <MenuItem value={"Peruanos"}>Peso Peruano</MenuItem>
               </Select>
         </FormControl>
       </div>
